@@ -2,7 +2,7 @@ Summary:	Bing, a point-to-point bandwidth measurement tool (b from Bandwith)
 Summary(pl):	Bing, narzêdzie s³u¿±ce mierzeniu przepustowo¶ci ³±czy 
 Name:		bing
 Version:	1.0.4
-Release:	3
+Release:	4
 License:	BSD
 Group:		Networking/Utilities
 Group(de):	Netzwerkwesen/Werkzeuge
