@@ -1,0 +1,28 @@
+--- bing.c	Fri Jul 21 01:45:32 1995
++++ bing.c	Fri Jun 15 19:38:39 2001
+@@ -860,9 +860,9 @@
+ 
+ 	for (; hlen > (int)sizeof(struct ip); --hlen, ++cp)
+ 		switch (*cp) {
+-		case IPOPT_EOL:
+-			hlen = 0;
+-			break;
++//		case IPOPT_EOL:
++//			hlen = 0;
++//			break;
+ 		case IPOPT_LSRR:
+ 			(void)printf("\nLSRR: ");
+ 			hlen -= 2;
+@@ -922,9 +922,9 @@
+ 				(void)putchar('\n');
+ 			}
+ 			break;
+-		case IPOPT_NOP:
+-			(void)printf("\nNOP");
+-			break;
++//		case IPOPT_NOP:
++//			(void)printf("\nNOP");
++//			break;
+ 		default:
+ 			(void)printf("\nunknown option %x", *cp);
+ 			break;
