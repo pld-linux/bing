@@ -1,8 +1,8 @@
 Summary:	Bing, a point-to-point bandwidth measurement tool (b from Bandwith)
 Summary(pl):	Bing, narzêdzie s³u¿±ce mierzeniu przepustowo¶ci ³±czy 
 Name:		bing
-Version:	1.0.4
-Release:	4
+Version:	1.1.3
+Release:	1
 License:	BSD
 Group:		Networking/Utilities
 Group(de):	Netzwerkwesen/Werkzeuge
@@ -36,9 +36,9 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man8}
 
 install bing $RPM_BUILD_ROOT%{_bindir}
-install bing.8 $RPM_BUILD_ROOT%{_mandir}/man8
+install unix/bing.8 $RPM_BUILD_ROOT%{_mandir}/man8
 
-gzip -9nf README ChangeLog
+gzip -9nf ChangeLog Readme.*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
