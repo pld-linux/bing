@@ -1,5 +1,5 @@
 Summary:	Bing, a point-to-point bandwidth measurement tool (b from Bandwith)
-Summary(pl):	Bing, narzêdzie s³u¿±ce mierzeniu przepustowo¶ci ³±czy 
+Summary(pl):	Bing, narzêdzie s³u¿±ce mierzeniu przepustowo¶ci ³±czy
 Name:		bing
 Version:	1.1.3
 Release:	1
@@ -20,9 +20,9 @@ Bing oblicza aktualn± (w przeciwieñstwie do np. ¶redniej)
 przepustowow¶æ ³±cza mierz±c czasy powrotu odpowiedzi na komunikaty
 ICMP.
 
-%prep 
+%prep
 %setup -q
-%patch -p0 
+%patch -p0
 
 %build
 %{__make} CFLAGS="%{rpmcflags}" CC=%{__cc}
@@ -41,6 +41,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz 
+%doc *.gz
 %attr(755,root,root) %{_bindir}/bing
 %{_mandir}/man8/bing.8*
