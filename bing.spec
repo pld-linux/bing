@@ -6,6 +6,7 @@ Release:	2
 License:	BSD
 Group:		Networking/Utilities
 Source0:	http://www.fibrespeed.net/~mbabcock/mirrors/bing/%{name}-%{version}.tar.bz2
+# Source0-md5:	095f8a04f37df2ed5c99328ddc551a09
 Patch0:		%{name}.patch
 URL:		http://web.cnam.fr/reseau/bing.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
