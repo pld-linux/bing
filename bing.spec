@@ -5,10 +5,6 @@ Version:	1.1.3
 Release:	1
 License:	BSD
 Group:		Networking/Utilities
-Group(de):	Netzwerkwesen/Werkzeuge
-Group(es):	Red/Utilitarios
-Group(pl):	Sieciowe/Narzêdzia
-Group(pt_BR):	Rede/Utilitários
 Source0:	http://www.fibrespeed.net/~mbabcock/mirrors/bing/%{name}-%{version}.tar.bz2
 Patch0:		%{name}.patch
 URL:		http://web.cnam.fr/reseau/bing.html
