@@ -4,12 +4,12 @@ Name:		bing
 Version:	1.0.4
 Release:	2
 License:	BSD
-Group:		Net/Utilities
-Group(pl):	Sieæ/Narzêdzia
+Group:		Networking/Utilities
+Group(de):	Netzwerkwesen/Werkzeuge
+Group(pl):	Sieciowe/Narzêdzia
 Source0:	http://www.fibrespeed.net/~mbabcock/mirrors/bing/%{name}-%{version}.tar.bz2
 Patch0:		%{name}.patch
 URL:		http://web.cnam.fr/reseau/bing.html
-
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -23,7 +23,6 @@ przepustowow¶æ ³±cza mierz±c czasy powrotu odpowiedzi na komunikaty
 ICMP.
 
 %prep 
-rm -rf %{RPM_BUILD_ROOT}
 %setup -q
 %patch -p0 
 
@@ -32,13 +31,18 @@ rm -rf %{RPM_BUILD_ROOT}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d %{RPM_BUILD_ROOT}%{_bindir}/
-install bing %{RPM_BUILD_ROOT}%{_bindir}/bing
-gzip -9nf README bing.ps ChangeLog
-install bing.8 %{_mandir}/man8
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man8}
+
+install bing $RPM_BUILD_ROOT%{_bindir}
+install bing.8 $RPM_BUILD_ROOT%{_mandir}/man8
+
+gzip -9nf README ChangeLog
+
+%clean
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc *.gz 
 %attr(755,root,root) %{_bindir}/bing
-%doc {README,ChangeLog,bing.ps}.gz 
-%{_mandir}/man8/bing.8
+%{_mandir}/man8/bing.8*
