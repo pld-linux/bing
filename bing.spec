@@ -17,9 +17,8 @@ throughput on a link by measuring ICMP echo requests roundtrip times
 for different packet sizes for each end of the link.
 
 %description -l pl
-Bing oblicza aktualn± (w przeciwieñstwie do np. ¶redniej)
-przepustowow¶æ ³±cza mierz±c czasy powrotu odpowiedzi na komunikaty
-ICMP.
+Bing oblicza aktualn± (w przeciwieñstwie do np. ¶redniej) przepustowo¶æ 
+³±cza mierz±c czasy powrotu odpowiedzi na komunikaty ICMP.
 
 %prep
 %setup -q
