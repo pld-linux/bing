@@ -25,7 +25,9 @@ Bing oblicza aktualn± (w przeciwieñstwie do np. ¶redniej) przepustowo¶æ
 %patch -p0
 
 %build
-%{__make} CFLAGS="%{rpmcflags}" CC=%{__cc}
+%{__make} \
+	CFLAGS="%{rpmcflags}" \
+	CC="%{__cc}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
