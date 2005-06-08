@@ -9,6 +9,7 @@ Source0:	http://www.fibrespeed.net/~mbabcock/mirrors/bing/%{name}-%{version}.tar
 # Source0-md5:	095f8a04f37df2ed5c99328ddc551a09
 Patch0:		%{name}.patch
 URL:		http://web.cnam.fr/reseau/bing.html
+BuildRequires:	groff
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
