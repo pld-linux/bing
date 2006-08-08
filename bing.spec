@@ -23,7 +23,7 @@ Bing oblicza aktualn± (w przeciwieñstwie do np. ¶redniej) przepustowo¶æ
 
 %prep
 %setup -q
-%patch -p0
+%patch0 -p0
 
 %build
 %{__make} \
