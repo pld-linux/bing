@@ -1,5 +1,5 @@
 Summary:	Bing, a point-to-point bandwidth measurement tool (b from Bandwith)
-Summary(pl):	Bing, narzêdzie s³u¿±ce mierzeniu przepustowo¶ci ³±czy
+Summary(pl.UTF-8):   Bing, narzÄ™dzie sÅ‚uÅ¼Ä…ce mierzeniu przepustowoÅ›ci Å‚Ä…czy
 Name:		bing
 Version:	1.1.3
 Release:	3
@@ -17,9 +17,9 @@ Bing determines the real (raw, as opposed to available or average)
 throughput on a link by measuring ICMP echo requests roundtrip times
 for different packet sizes for each end of the link.
 
-%description -l pl
-Bing oblicza aktualn± (w przeciwieñstwie do np. ¶redniej) przepustowo¶æ 
-³±cza mierz±c czasy powrotu odpowiedzi na komunikaty ICMP.
+%description -l pl.UTF-8
+Bing oblicza aktualnÄ… (w przeciwieÅ„stwie do np. Å›redniej) przepustowoÅ›Ä‡ 
+Å‚Ä…cza mierzÄ…c czasy powrotu odpowiedzi na komunikaty ICMP.
 
 %prep
 %setup -q
