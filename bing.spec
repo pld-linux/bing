@@ -1,5 +1,5 @@
 Summary:	Bing, a point-to-point bandwidth measurement tool (b from Bandwith)
-Summary(pl.UTF-8):   Bing, narzędzie służące mierzeniu przepustowości łączy
+Summary(pl.UTF-8):	Bing, narzędzie służące mierzeniu przepustowości łączy
 Name:		bing
 Version:	1.1.3
 Release:	3
